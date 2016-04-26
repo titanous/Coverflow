@@ -42,6 +42,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/schwa/Coverflow.git", :tag => s.version.to_s}
   s.source_files  = "Coverflow/*.{h,m,mm,cpp}"
+  s.private_header_files = "Coverflow/Interpolator.h"
 
   s.frameworks = "CoreGraphics", "QuartzCore"
   s.requires_arc = true
